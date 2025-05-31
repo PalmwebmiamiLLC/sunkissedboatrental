@@ -1,0 +1,3016 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yachtico - Luxury Yacht Experiences</title>
+<meta name="description" content="Experience ultimate luxury on the waters with Yachtico. Premium yacht and boat rentals. Professional captains, stunning views, unforgettable memories.">
+<!-- Font Awesome --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Embedded CSS --><style>
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/* Variables */
+:root {
+  /* Color Palette */
+  --primary-dark: #0a2540;
+  --primary-medium: #1a4674;
+  --primary-light: #2a6bad;
+  --accent-light-green: #8ED1B5;
+  --accent-teal: #00a0b0;
+  --accent-turquoise: #40e0d0;
+  
+  /* Gradients */
+  --gradient-ocean: linear-gradient(135deg, var(--primary-light), var(--primary-medium), var(--accent-teal));
+  --gradient-blue-green: linear-gradient(135deg, var(--primary-light), var(--accent-teal), var(--accent-light-green));
+  --gradient-luxury: linear-gradient(135deg, #000428, #004e92);
+  --gradient-modern: linear-gradient(135deg, var(--primary-light), var(--accent-light-green));
+  
+  /* Shadows */
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 0 15px rgba(212, 175, 55, 0.5);
+  --shadow-glow-teal: 0 0 15px rgba(0, 160, 176, 0.5);
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-round: 50%;
+}
+
+/* Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+h5 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+@media (min-width: 768px) {
+  h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+p {
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.text-highlight {
+  color: var(--accent-gold);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #8ED1B5, #8ED1B5, #8ED1B5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.section-title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+  z-index: 1;
+  color: #000000 !important;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    margin-bottom: 3rem;
+  }
+}
+
+.section-title * {
+  color: #000000 !important;
+}
+
+/* Allow gradient text to override the global styling */
+.section-title .gradient-text {
+  color: transparent !important;
+  background: linear-gradient(135deg, #00C853, #4CAF50, #8BC34A) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* Ensure titles are black in all contexts, including mobile */
+.experience-section .section-title,
+.experience-section .section-title *,
+.fleet-section .section-title,
+.fleet-section .section-title *,
+.locations-section .section-title,
+.locations-section .section-title *,
+.testimonials-section .section-title,
+.testimonials-section .section-title *,
+.contact-section .section-title,
+.contact-section .section-title * {
+  color: #000000 !important;
+}
+
+/* Override for gradient text within sections */
+.experience-section .section-title .gradient-text,
+.fleet-section .section-title .gradient-text,
+.locations-section .section-title .gradient-text,
+.testimonials-section .section-title .gradient-text,
+.contact-section .section-title .gradient-text {
+  color: transparent !important;
+  background: linear-gradient(135deg, #8ED1B5, #8ED1B5, #8ED1B5) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background: var(--gradient-blue-green);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .section-title::after {
+    width: 80px;
+    height: 3px;
+    bottom: -15px;
+  }
+}
+
+.section-title-left {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-title-left {
+    margin-bottom: 2rem;
+  }
+}
+
+.section-title-left::after {
+  left: 0;
+  transform: none;
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.75rem;
+    width: 100%;
+  }
+}
+
+.section {
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-dark {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+/* Button & Links */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  background: var(--gradient-ocean);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-blue-green);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md), var(--shadow-glow-teal);
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--accent-light-green);
+  color: var(--accent-light-green);
+}
+
+.btn-secondary:hover {
+  background: var(--accent-light-green);
+  color: var(--primary-dark);
+}
+
+.btn-large {
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+}
+
+.btn-small {
+  padding: 0.7rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Header & Navigation */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.4s ease;
+  padding: 1.5rem 0;
+  background-color: rgba(10, 37, 64, 0.95); /* Always show background */
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem; /* Smaller on mobile */
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+}
+
+.logo span {
+  color: var(--accent-light-green);
+}
+
+.nav-links {
+  display: none; /* Hide on mobile by default */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 2.5rem;
+  }
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-blue-green);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-light-green);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.mobile-menu {
+  display: block; /* Show on mobile */
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Mobile navigation when active */
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  background-color: var(--primary-dark);
+  padding: 4rem 1.5rem 2rem;
+  z-index: 1;
+  align-items: flex-start;
+  gap: 1.2rem;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links.active a {
+  font-size: 0.95rem;
+}
+
+.mobile-menu.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px; /* Added to prevent overlap with header */
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .hero-buttons .btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 37, 64, 0.6);
+  z-index: 1;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-bg {
+    background-attachment: scroll; /* Better performance on mobile */
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  color: white;
+  padding: 0 1rem;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero-title {
+  font-size: clamp(1.8rem, 5vw, 3.5rem); /* Responsive font size */
+  margin-bottom: 0.8rem;
+}
+
+.hero-subtitle {
+  font-size: clamp(0.9rem, 2vw, 1.5rem); /* Responsive font size */
+  margin-bottom: 1.2rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.5rem;
+  animation: bounce 2s infinite;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Fleet Section */
+.fleet-section {
+  position: relative;
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .fleet-section {
+    padding: 6rem 0;
+  }
+}
+
+.fleet-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="1" fill="%23d4af37" opacity="0.3"/></svg>');
+  background-size: 50px 50px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.fleet-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.search-filters {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 768px) {
+  .search-filters {
+    padding: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.filter-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .filter-form {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    align-items: end;
+  }
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--primary-dark);
+  font-size: 0.9rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: var(--radius-md);
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--accent-teal);
+  box-shadow: 0 0 0 3px rgba(0, 160, 176, 0.2);
+}
+
+.search-btn {
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Fleet Grid */
+.fleet-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .fleet-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0;
+  }
+}
+
+.fleet-card {
+  background-color: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all 0.4s ease;
+  position: relative;
+  transform: translateY(0);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fleet-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg), var(--shadow-glow-teal);
+}
+
+.fleet-card-images {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .fleet-card-images {
+    height: 250px;
+  }
+}
+
+.fleet-img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fleet-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: none;
+}
+
+.fleet-img.active {
+  opacity: 1;
+  display: block;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .slider-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+.slider-arrow:hover {
+  background-color: var(--accent-light-green);
+  color: white;
+}
+
+.prev-arrow {
+  left: 10px;
+}
+
+.next-arrow {
+  right: 10px;
+}
+
+.slider-counter {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  z-index: 2;
+}
+
+.fleet-card-content {
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .fleet-card-content {
+    padding: 2rem;
+  }
+}
+
+.fleet-card-title {
+  margin-bottom: 0.4rem;
+  color: var(--primary-dark);
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .fleet-card-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.fleet-card-desc {
+  color: #555;
+  margin-bottom: 1.2rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .fleet-card-desc {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+.fleet-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  gap: 0.5rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.detail-item i {
+  margin-right: 0.5rem;
+  color: var(--accent-teal);
+  font-size: 1.2rem;
+}
+
+.fleet-card-pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .fleet-card-pricing {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.fleet-card-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.fleet-card-price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.availability-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: var(--accent-light-green);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .availability-btn {
+    width: auto;
+  }
+}
+
+.availability-btn:hover {
+  background: var(--accent-teal);
+  transform: translateY(-3px);
+}
+
+.fleet-card-btn {
+  width: 100%;
+}
+
+/* About Section */
+.about-section {
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    padding: 6rem 0;
+  }
+}
+
+.about-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-blue-green);
+  z-index: 0;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-content {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .about-image-container {
+    grid-column: 1 / 6;
+  }
+  
+  .about-text-container {
+    grid-column: 6 / -1;
+  }
+}
+
+.about-text-container {
+  color: white;
+  order: 2;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .about-text-container {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-text-container {
+    padding: 0;
+  }
+}
+
+.about-image-container {
+  position: relative;
+  order: 1;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .about-image-container {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-image-container {
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-text-container {
+    order: 2;
+  }
+  
+  .about-image-container {
+    order: 1;
+  }
+}
+
+.about-image-frame {
+  position: relative;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-lg);
+  transform: rotate(1deg);
+  box-shadow: var(--shadow-lg);
+  height: 250px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .about-image-frame {
+    width: 100%;
+    height: 220px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-image-frame {
+    padding: 0.8rem;
+    transform: rotate(2deg);
+    height: 100%;
+  }
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-image-frame:hover .about-image {
+  transform: scale(1.05);
+}
+
+.about-text {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .about-text {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .about-stats {
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+}
+
+.stat-item {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+@media (min-width: 768px) {
+  .stat-number {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .stat-label {
+    font-size: 0.8rem;
+  }
+}
+
+/* Experience Gallery Section */
+.experience-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .experience-section {
+    padding: 6rem 0;
+  }
+}
+
+.experience-gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .experience-gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    gap: 1rem;
+    overflow-x: visible;
+    padding-bottom: 0;
+  }
+  
+  .gallery-item.large {
+    grid-column: 1 / 7;
+    grid-row: 1 / 5;
+  }
+
+  .gallery-item.medium {
+    grid-column: 7 / 10;
+    grid-row: 1 / 3;
+  }
+
+  .gallery-item.small {
+    grid-column: 10 / 13;
+    grid-row: 1 / 3;
+  }
+
+  .gallery-item.tall {
+    grid-column: 7 / 10;
+    grid-row: 3 / 7;
+  }
+
+  .gallery-item.wide {
+    grid-column: 1 / 7;
+    grid-row: 5 / 7;
+  }
+
+  .gallery-item.medium:last-child {
+    grid-column: 10 / 13;
+    grid-row: 3 / 7;
+  }
+}
+
+.gallery-item {
+  flex: 0 0 85%;
+  min-width: 260px;
+  height: 250px;
+  scroll-snap-align: center;
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .gallery-item {
+    flex: none;
+    width: auto;
+    height: auto;
+    margin-right: 0;
+  }
+}
+
+.experience-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .experience-img {
+  transform: scale(1.05);
+}
+
+.experience-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(10, 37, 64, 0.8), transparent);
+  padding: 1.5rem;
+  opacity: 1; /* Always visible on mobile */
+  transform: translateY(0);
+}
+
+@media (min-width: 992px) {
+  .experience-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(20px);
+  }
+  
+  .gallery-item:hover .experience-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-title {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Locations Section */
+.locations-section {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .locations-section {
+    padding: 6rem 0;
+  }
+}
+
+.locations-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+@media (min-width: 768px) {
+  .locations-intro {
+    margin-bottom: 4rem;
+  }
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .locations-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}
+
+.location-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 400px; /* Shorter on mobile */
+  background: white;
+  box-shadow: var(--shadow-md);
+  transition: all 0.4s ease;
+  transform: translateY(0);
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .location-card {
+    height: 450px;
+  }
+}
+
+.location-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg), var(--shadow-glow-teal);
+}
+
+.location-img {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+@media (min-width: 768px) {
+  .location-img {
+    height: 60%;
+  }
+}
+
+.location-card:hover .location-img {
+  transform: scale(1.05);
+}
+
+.location-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  padding: 1.5rem;
+  background: white;
+  color: var(--primary-dark);
+}
+
+@media (min-width: 768px) {
+  .location-content {
+    height: 40%;
+    padding: 2rem;
+  }
+}
+
+.location-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .location-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.location-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+  color: #666;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .testimonials-section {
+    padding: 5rem 0;
+  }
+}
+
+.testimonials-slider {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .testimonials-slider {
+    padding: 2rem 0;
+  }
+}
+
+.testimonial-item {
+  display: none;
+}
+
+.testimonial-item.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.author-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-light-green);
+  box-shadow: var(--shadow-glow-teal);
+}
+
+@media (min-width: 768px) {
+  .author-img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1rem;
+}
+
+.author-name {
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.author-location {
+  color: #666;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.testimonial-quote {
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic;
+  position: relative;
+  line-height: 1.6;
+  margin: 0;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .testimonial-quote {
+    font-size: 1rem;
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+
+.testimonial-quote::before {
+  content: '"';
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  color: var(--accent-light-green);
+  margin-right: 0.2rem;
+}
+
+.testimonial-quote::after {
+  content: '"';
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  color: var(--accent-light-green);
+  margin-left: 0.2rem;
+}
+
+.testimonial-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .testimonial-navigation {
+    margin-top: 2rem;
+  }
+}
+
+.testimonial-nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--primary-dark);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .testimonial-nav-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+.testimonial-nav-btn:hover {
+  background-color: var(--accent-light-green);
+  color: white;
+  box-shadow: var(--shadow-glow-teal);
+  transform: translateY(-3px);
+}
+
+/* Why Choose Us Section */
+.why-section {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+  background: url('https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .why-section {
+    padding: 6rem 0;
+  }
+}
+
+.why-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.why-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.why-section .section-title {
+  color: white !important;
+}
+
+.why-section .section-title * {
+  color: white !important;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .why-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.why-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.why-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  margin: 0 auto 1.2rem;
+  background: linear-gradient(135deg, var(--accent-light-green) 0%, var(--accent-teal) 100%);
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .why-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.why-card:hover .why-icon {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.why-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .why-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.why-text {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .why-text {
+    font-size: 1rem;
+  }
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 4rem 0;
+  background-color: white;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .faq-section {
+    padding: 6rem 0;
+  }
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  background-color: white;
+}
+
+.faq-question {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.faq-question:hover {
+  background-color: var(--light-gray);
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .faq-question h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.faq-toggle {
+  font-size: 1rem;
+  color: var(--accent-teal);
+  transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: var(--light-gray);
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding: 1.25rem;
+}
+
+.faq-answer p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 3rem 0;
+  background-color: var(--light-gray);
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .contact-section {
+    padding: 6rem 0;
+  }
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 480px) {
+  .contact-grid {
+    padding: 0 0.5rem;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    gap: 2rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.contact-info-box {
+  background-color: white;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .contact-info-box {
+    padding: 1.25rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-info-box {
+    padding: 2rem;
+  }
+}
+
+.contact-info-box h3 {
+  margin-bottom: 0.75rem;
+  color: var(--primary-dark);
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact-info-box h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+}
+
+.contact-info-box p {
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .contact-info-box p {
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+}
+
+.contact-details {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact-details {
+    margin-bottom: 2rem;
+  }
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .contact-detail-item {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.contact-detail-item i {
+  background: var(--gradient-blue-green);
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .contact-detail-item i {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.contact-detail-item h4 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  color: var(--primary-dark);
+}
+
+@media (min-width: 768px) {
+  .contact-detail-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.contact-detail-item p {
+  margin-bottom: 0;
+  color: #555;
+  font-size: 0.8rem;
+  word-break: break-word;
+}
+
+@media (min-width: 768px) {
+  .contact-detail-item p {
+    font-size: 0.95rem;
+  }
+}
+
+.contact-hours h4 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: var(--primary-dark);
+}
+
+@media (min-width: 768px) {
+  .contact-hours h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.contact-hours p {
+  margin-bottom: 0;
+  color: #555;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .contact-hours p {
+    font-size: 0.95rem;
+  }
+}
+
+.contact-form-box {
+  background-color: white;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .contact-form-box {
+    padding: 1.25rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-form-box {
+    padding: 2rem;
+  }
+}
+
+.contact-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .contact-form .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contact-form .form-group {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: var(--primary-dark);
+  font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .contact-form label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: var(--radius-md);
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .contact-form .form-control {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+.contact-form .form-control:focus {
+  outline: none;
+  border-color: var(--accent-teal);
+  box-shadow: 0 0 0 3px rgba(0, 160, 176, 0.2);
+}
+
+.contact-form textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
+}
+
+@media (min-width: 768px) {
+  .contact-form textarea.form-control {
+    min-height: 120px;
+  }
+}
+
+.contact-form .btn-block {
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .contact-form .btn-block {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+  40% { transform: translateY(-20px) translateX(-50%); }
+  60% { transform: translateY(-10px) translateX(-50%); }
+}
+
+/* Loading Animation */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-content {
+  text-align: center;
+  color: white;
+}
+
+.loader-icon {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin: 0 auto 1rem;
+}
+
+.loader-wave {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.loader-wave::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--accent-teal), transparent);
+  animation: waveAnimation 2s linear infinite;
+}
+
+.loader-boat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23d4af37"><path d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l1.89-6.68c.08-.26.06-.54-.06-.78s-.34-.42-.6-.5L20 10.62V6c0-1.1-.9-2-2-2h-3V1H9v3H6c-1.1 0-2 .9-2 2v4.62l-1.29.42c-.26.08-.48.26-.6.5s-.15.52-.06.78L3.95 19zM6 6h12v3.97L12 8 6 9.97V6z"/></svg>');
+  background-repeat: no-repeat;
+  animation: boatAnimation 2s linear infinite;
+}
+
+@keyframes waveAnimation {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes boatAnimation {
+  0% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(20px) rotate(5deg); }
+  50% { transform: translateX(40px) rotate(0deg); }
+  75% { transform: translateX(60px) rotate(-5deg); }
+  100% { transform: translateX(80px) rotate(0deg); }
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 3rem 0 1.5rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.footer-title {
+  color: white;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.contact-info p {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info i {
+  color: var(--accent-light-green);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-light-green);
+  transform: translateY(-3px);
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.newsletter-input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+  width: 70%;
+}
+
+.newsletter-btn {
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 0 1rem;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-icon">
+                <div class="loader-wave"></div>
+                <div class="loader-boat"></div>
+            </div>
+            <h2>Yachtico<span class="text-accent"></span></h2>
+            <p>Setting sail...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Yachtico<span></span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#fleet">Our Fleet</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#locations">Destinations</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+</div>
+    </header><!-- Hero Section --><section id="home" class="hero"><div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1521109464564-2fa2faa95858?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB5YWNodCUyMGFlcmlhbCUyMGRyb25lJTIwdmlld3xlbnwwfHx8fDE3NDg0MDM1MDh8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')"></div>
+        <div class="container">
+            <div class="hero-content animate-on-scroll">
+                <h1 class="hero-title">Experience <span class="gradient-text">Luxury</span> on the Waters of Miami</h1>
+                <p class="hero-subtitle">Premium yacht and boat rentals with professional captains for the ultimate boating experience</p>
+                <div class="hero-buttons">
+                    <a href="#fleet" class="btn btn-large">Explore Our Fleet</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <a href="#fleet" class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section><!-- Fleet Section --><section id="fleet" class="fleet-section"><div class="container">
+            <h2 class="section-title animate-on-scroll">Explore Our <span class="gradient-text">Luxury Fleet</span>
+</h2>
+            
+            <!-- Search Filters -->
+            <div class="search-filters animate-on-scroll">
+                <form class="filter-form">
+                    <div class="form-group">
+                        <label for="people">Number of People</label>
+                        <select id="people" class="form-control"><option value="">Any</option>
+<option value="1-6">1-6 People</option>
+<option value="7-12">7-12 People</option>
+<option value="13+">13+ People</option></select>
+</div>
+                    
+                    <div class="form-group">
+                        <label for="size">Boat Size</label>
+                        <select id="size" class="form-control"><option value="">Any</option>
+<option value="small">Small (Up to 25ft)</option>
+<option value="medium">Medium (26-40ft)</option>
+<option value="large">Large (41ft+)</option></select>
+</div>
+                    
+                    <div class="form-group">
+                        <label for="price">Price Range</label>
+                        <select id="price" class="form-control"><option value="">Any</option>
+<option value="budget">$200-$500/hr</option>
+<option value="premium">$501-$1000/hr</option>
+<option value="luxury">$1001+/hr</option></select>
+</div>
+                    
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <select id="location" class="form-control"><option value="">Any</option>
+<option value="miami">Miami</option>
+<option value="fort-lauderdale">Fort Lauderdale</option>
+<option value="palm-beach">Palm Beach</option>
+<option value="delray-beach">Delray Beach</option></select>
+</div>
+                    
+                    <div class="form-group">
+                        <button type="button" class="btn search-btn">Find Your Yacht</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Fleet Grid -->
+            <div class="fleet-grid animate-on-scroll">
+                <!-- Boat Card 1 -->
+                <div class="fleet-card">
+                    <div class="fleet-card-images">
+                        <div class="fleet-img-container">
+                            <img src="https://images.unsplash.com/photo-1500627964684-141351970a7f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBzYWlsaW5nJTIwb2NlYW58ZW58MHx8fHwxNzQ4NDUyMzg5fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Ocean Explorer Yacht" class="fleet-img active"><img src="https://images.unsplash.com/photo-1506630525117-569864448381?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBmbGVldHxlbnwwfHx8fDE3NDg0MDMxNDV8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Ocean Explorer Interior" class="fleet-img"><img src="https://images.unsplash.com/photo-1527588574470-7152d7c3c15e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHw2fHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBzYWlsaW5nJTIwb2NlYW58ZW58MHx8fHwxNzQ4NDUyMzg5fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Ocean Explorer Deck" class="fleet-img"><button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+                            <div class="slider-counter">1/3</div>
+                        </div>
+                    </div>
+                    <div class="fleet-card-content">
+                        <h3 class="fleet-card-title">Ocean Explorer Yacht</h3>
+                        <p class="fleet-card-desc">Elegant 55-foot luxury yacht with spacious deck, premium amenities, and stunning views. Perfect for exploring Miami's beautiful coastline in style.</p>
+                        <div class="fleet-card-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>12 People</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>650 HP</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>55 ft</span>
+                            </div>
+                        </div>
+                        <div class="fleet-card-pricing">
+                            <div class="fleet-card-price">$850<span>/hour</span>
+</div>
+                            <button class="availability-btn" onclick="showCalendar('ocean-explorer')">
+                                <i class="fas fa-calendar-alt"></i>
+                                Availability
+                            </button>
+                        </div>
+                        <a href="#contact" class="btn fleet-card-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Boat Card 2 -->
+                <div class="fleet-card">
+                    <div class="fleet-card-images">
+                        <div class="fleet-img-container">
+                            <img src="https://images.unsplash.com/photo-1528154291023-a6525fabe5b4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBvY2VhbiUyMHNhaWxpbmd8ZW58MHx8fHwxNzQ4NDg0Mjk2fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Coastal Cruiser" class="fleet-img active"><img src="https://images.unsplash.com/photo-1494961653030-8d1da62c9c98?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBmbGVldHxlbnwwfHx8fDE3NDg0MDMxNDV8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Coastal Cruiser Deck" class="fleet-img"><img src="https://images.unsplash.com/photo-1500627964684-141351970a7f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBzYWlsaW5nJTIwb2NlYW58ZW58MHx8fHwxNzQ4NDUyMzg5fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Coastal Cruiser Interior" class="fleet-img"><button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+                            <div class="slider-counter">1/3</div>
+                        </div>
+                    </div>
+                    <div class="fleet-card-content">
+                        <h3 class="fleet-card-title">Coastal Cruiser</h3>
+                        <p class="fleet-card-desc">Sleek 38-foot cruiser with powerful engines, perfect for exploring Miami's coastline. Features modern amenities and comfortable seating for day trips.</p>
+                        <div class="fleet-card-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>8 People</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>500 HP</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>38 ft</span>
+                            </div>
+                        </div>
+                        <div class="fleet-card-pricing">
+                            <div class="fleet-card-price">$600<span>/hour</span>
+</div>
+                            <button class="availability-btn" onclick="showCalendar('coastal-cruiser')">
+                                <i class="fas fa-calendar-alt"></i>
+                                Availability
+                            </button>
+                        </div>
+                        <a href="#contact" class="btn fleet-card-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Boat Card 3 -->
+                <div class="fleet-card">
+                    <div class="fleet-card-images">
+                        <div class="fleet-img-container">
+                            <img src="https://images.unsplash.com/photo-1521109464564-2fa2faa95858?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBzYWlsaW5nJTIwb2NlYW58ZW58MHx8fHwxNzQ4NDUyMzg5fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Miami Party Yacht" class="fleet-img active"><img src="https://images.unsplash.com/photo-1521193698642-9810ddf4bff6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBzYWlsaW5nJTIwb2NlYW58ZW58MHx8fHwxNzQ4NDUyMzg5fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Miami Party Yacht Deck" class="fleet-img"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHw1fHxwZW9wbGUlMjBlbmpveWluZyUyMGJlYWNoJTIwcGFydHklMjB5YWNodCUyMGx1eHVyeXxlbnwwfHx8fDE3NDg0NTIzODV8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Party Time" class="fleet-img"><button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+                            <div class="slider-counter">1/3</div>
+                        </div>
+                    </div>
+                    <div class="fleet-card-content">
+                        <h3 class="fleet-card-title">Miami Party Yacht</h3>
+                        <p class="fleet-card-desc">Spacious 65-foot yacht with entertainment system, bar, and plenty of room for socializing. Perfect for celebrations and special events.</p>
+                        <div class="fleet-card-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>20 People</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>800 HP</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>65 ft</span>
+                            </div>
+                        </div>
+                        <div class="fleet-card-pricing">
+                            <div class="fleet-card-price">$1,200<span>/hour</span>
+</div>
+                            <button class="availability-btn" onclick="showCalendar('miami-party')">
+                                <i class="fas fa-calendar-alt"></i>
+                                Availability
+                            </button>
+                        </div>
+                        <a href="#contact" class="btn fleet-card-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Boat Card 4 -->
+                <div class="fleet-card">
+                    <div class="fleet-card-images">
+                        <div class="fleet-img-container">
+                            <img src="https://images.unsplash.com/photo-1580422666359-7160890d8c0b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwxMHx8bHV4dXJ5JTIweWFjaHQlMjBib2F0JTIwc2FpbGluZyUyMG9jZWFufGVufDB8fHx8MTc0ODQ1MjM4OXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Romantic Setting" class="fleet-img active"><img src="https://images.unsplash.com/photo-1541239370886-851049f91487?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjB5YWNodCUyMHdvbWVufGVufDB8fHx8MTc0ODQwMzE0MXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Sunset Serenity Yacht" class="fleet-img"><img src="https://images.unsplash.com/photo-1481988535861-271139e06469?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjB5YWNodCUyMHN1bnNldCUyMGRyb25lfGVufDB8fHx8MTc0ODQwMzUxOXww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Sunset Views" class="fleet-img"><button class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>
+                            <div class="slider-counter">1/3</div>
+                        </div>
+                    </div>
+                    <div class="fleet-card-content">
+                        <h3 class="fleet-card-title">Sunset Serenity</h3>
+                        <p class="fleet-card-desc">Romantic 45-foot yacht perfect for sunset cruises, with premium dining options and panoramic views. Ideal for intimate gatherings and romantic occasions.</p>
+                        <div class="fleet-card-details">
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>10 People</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>550 HP</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-ruler"></i>
+                                <span>45 ft</span>
+                            </div>
+                        </div>
+                        <div class="fleet-card-pricing">
+                            <div class="fleet-card-price">$750<span>/hour</span>
+</div>
+                            <button class="availability-btn" onclick="showCalendar('sunset-serenity')">
+                                <i class="fas fa-calendar-alt"></i>
+                                Availability
+                            </button>
+                        </div>
+                        <a href="#contact" class="btn fleet-card-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-bg"></div>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image-container animate-on-scroll">
+                    <div class="about-image-frame">
+                        <img src="https://images.unsplash.com/photo-1527588574470-7152d7c3c15e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHw2fHxsdXh1cnklMjB5YWNodCUyMGJvYXQlMjBzYWlsaW5nJTIwb2NlYW58ZW58MHx8fHwxNzQ4NDUyMzg5fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Luxury Yacht Experience" class="about-image">
+</div>
+                </div>
+                <div class="about-text-container animate-on-scroll">
+                    <h2 class="section-title-left" style="font-size: clamp(1.5rem, 4vw, 2.5rem);">About <span class="gradient-text">Yachtico</span></h2>
+                    <p class="about-text">Welcome to the premier boat rental service in South Florida. We provide luxury yachts and boats with experienced captains to ensure your journey is safe, enjoyable, and unforgettable.</p>
+                    <p class="about-text">With over 10 years of experience in the boating industry, our team is passionate about creating memorable experiences on the water.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Luxury Vessels</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn">Book Your Experience</a>
+                </div>
+            </div>
+        </div>
+    </section><!-- Experience Gallery Section --><section class="experience-section"><div class="container">
+            <h2 class="section-title">Experience the <span class="gradient-text">Luxury</span>
+</h2>
+            <div class="experience-gallery" id="experience-gallery">
+                <div class="gallery-item large">
+                    <img src="https://pixabay.com/get/g1def4853c92b31ce9adcc6361158554be87e204c070555bc92caea484e780d6f5747683f55e4fcc4acdf8205b3e5327b2f10e3a832c5de6d9038b3f1f0b71df3_640.jpg" alt="Luxury Yacht Experience" class="experience-img"><div class="experience-overlay">
+                        <h3 class="experience-title">Luxury Yachting</h3>
+                    </div>
+                </div>
+                <div class="gallery-item medium">
+                    <img src="https://pixabay.com/get/g664a799ee2dc80f311de999758e35cd6223c8460d6b979ca5ffd1eeb07f92ffc57c2d5e919b536b9adeefdd7d924b1bf7b1034529784a7147bc6249359be40d4_640.jpg" alt="Yacht Adventure" class="experience-img"><div class="experience-overlay">
+                        <h3 class="experience-title">Ocean Adventures</h3>
+                    </div>
+                </div>
+                <div class="gallery-item small">
+                    <img src="https://pixabay.com/get/g17c33293fe92e46a8aab2ce7834fae4c6886e5df560a68cf17d8b6d52ec213c118e2ab156eb9852d6cd64615fb6685b21b1156726ecfd196a5469fd83f12fc9e_640.jpg" alt="Yacht Railings" class="experience-img"><div class="experience-overlay">
+                        <h3 class="experience-title">Luxury Moments</h3>
+                    </div>
+                </div>
+                <div class="gallery-item tall">
+                    <img src="https://pixabay.com/get/gfe9fd6246b1b9e9ed6a1ecf129a8203dde338e6e25ca6e39fa5e885b862de8493b81878898960b14e76dd0cdfe6064269ec4dc45eebbb07bcf591ab6a2f6e567_640.jpg" alt="People Jumping from Yacht" class="experience-img"><div class="experience-overlay">
+                        <h3 class="experience-title">Beach Fun</h3>
+                    </div>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="https://pixabay.com/get/g44fd03d0749b82800ffce92da47a6cea790ba79fbce9c2608165dc935dc7867af14a0039aa2615e7039e79405142ec2e008bd05a153858d9102724c9700be31a_640.jpg" alt="People Running at Beach" class="experience-img"><div class="experience-overlay">
+                        <h3 class="experience-title">Summer Celebrations</h3>
+                    </div>
+                </div>
+                <div class="gallery-item medium">
+                    <img src="https://pixabay.com/get/ga6d14f87389a60f0470d0a4fb4c2b78eb01800f4b76cce3c3b6f1f154d32e28e59f9410db4cfdd72aacecc8abe0cbeb4_640.jpg" alt="Beach Relaxation" class="experience-img"><div class="experience-overlay">
+                        <h3 class="experience-title">Coastal Paradise</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- Locations Section --><section id="locations" class="locations-section"><div class="container">
+            <div class="locations-content">
+                <div class="locations-intro">
+                    <h2 class="section-title">Destinations We <span class="gradient-text">Serve</span>
+</h2>
+                    <p>Explore the stunning coastlines and waterways of South Florida's most beautiful locations. Our expert captains know the best spots for unforgettable experiences.</p>
+                </div>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <img src="https://images.unsplash.com/photo-1562768914-009c426fe832?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwxfHxtaWFtaSUyMGJlYWNoJTIweWFjaHQlMjBsdXh1cnl8ZW58MHx8fHwxNzQ4NDkwNTAxfDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Miami Beach" class="location-img"><div class="location-content">
+                            <h3 class="location-title">Miami Beach</h3>
+                            <p class="location-desc">Experience the vibrant culture and crystal waters of Miami's iconic beaches. Cruise along the famous skyline and discover secluded spots only accessible by boat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <img src="https://images.unsplash.com/photo-1503756234508-e32369269deb?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjB5YWNodCUyMG1pYW1pJTIwYmVhY2h8ZW58MHx8fHwxNzQ4NDAzMTM3fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Fort Lauderdale" class="location-img"><div class="location-content">
+                            <h3 class="location-title">Fort Lauderdale</h3>
+                            <p class="location-desc">Known as the "Venice of America" with its intricate canal system. Navigate through waterfront mansions and enjoy the beautiful coastal scenery.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjB5YWNodCUyMG1pYW1pJTIwYmVhY2h8ZW58MHx8fHwxNzQ4NDAzMTM3fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Palm Beach" class="location-img"><div class="location-content">
+                            <h3 class="location-title">Palm Beach</h3>
+                            <p class="location-desc">Elegant coastal town known for its upscale living and beautiful shorelines. Discover pristine beaches and enjoy the luxurious atmosphere.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <img src="https://images.unsplash.com/photo-1491378630646-3440efa57c3b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjB5YWNodCUyMG1pYW1pJTIwYmVhY2h8ZW58MHx8fHwxNzQ4NDAzMTM3fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Delray Beach" class="location-img"><div class="location-content">
+                            <h3 class="location-title">Delray Beach</h3>
+                            <p class="location-desc">Charming coastal community with a perfect blend of small-town atmosphere and sophisticated amenities. Explore hidden coves and serene waters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- Testimonials Section --><section class="testimonials-section"><div class="container">
+            <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span>
+</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-card">
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="Sarah M." class="author-img"><div class="author-details">
+                                <h4 class="author-name">Sarah M.</h4>
+                                <p class="author-location">Miami, FL</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-quote">Absolutely incredible experience! The yacht was immaculate, and the captain was professional and knowledgeable. We had the most amazing day cruising around Miami Beach. Will definitely rent again!</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="John D." class="author-img"><div class="author-details">
+                                <h4 class="author-name">John D.</h4>
+                                <p class="author-location">Fort Lauderdale, FL</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-quote">Our corporate event on the Miami Party Yacht was a huge success! The boat was spacious, the amenities were top-notch, and the captain made sure everyone had a great time. Highly recommend for any special occasion!</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Lisa R." class="author-img"><div class="author-details">
+                                <h4 class="author-name">Lisa R.</h4>
+                                <p class="author-location">Palm Beach, FL</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-quote">We celebrated our anniversary on the Coastal Cruiser, and it was magical! The sunset views were breathtaking, and the captain took us to some secluded spots that we would never have found on our own. A memory we'll cherish forever.</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-navigation">
+                    <button class="testimonial-nav-btn prev-testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="testimonial-nav-btn next-testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section><!-- Why Choose Us Section --><section class="why-section"><div class="container">
+            <h2 class="section-title" style="color: white !important;">Why <span class="gradient-text">Choose Us</span>
+</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="why-title">Premium Fleet</h3>
+                    <p class="why-text">Our fleet consists of only the finest luxury yachts, meticulously maintained and equipped with premium amenities for an unforgettable experience.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="why-title">Professional Crew</h3>
+                    <p class="why-text">Our captains and crew are highly trained professionals with extensive experience and local knowledge to ensure your safety and enjoyment.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="why-title">Exclusive Destinations</h3>
+                    <p class="why-text">Access secluded coves, pristine beaches, and hidden spots only reachable by boat, guided by our captains who know the best local secrets.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3 class="why-title">Personalized Service</h3>
+                    <p class="why-text">We customize each charter to meet your specific needs and preferences, whether it's a romantic sunset cruise or a lively celebration with friends.</p>
+                </div>
+            </div>
+        </div>
+    </section><!-- FAQ Section --><section id="faq" class="faq-section"><div class="container">
+            <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span>
+</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need boating experience to rent a yacht?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, all of our yacht rentals come with a professional captain and crew. You don't need any boating experience to enjoy a luxury yacht charter with us.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's included in the rental price?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our rental prices include the yacht, professional captain, crew, fuel for standard cruising, water toys (varies by yacht), and standard amenities. Food, beverages, and special requests are typically additional.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How far in advance should I book?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 2-3 weeks in advance for regular days and 4-6 weeks for holidays and peak season dates. However, we can sometimes accommodate last-minute bookings depending on availability.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What happens in case of bad weather?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If severe weather conditions prevent safe boating, we'll work with you to reschedule your charter at no additional cost. Our captains make the final safety decisions regarding weather conditions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I bring my own food and drinks?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you're welcome to bring your own food and beverages. We can also arrange catering services or recommend local options if you prefer. Some of our yachts have cooking facilities and refrigeration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" style="font-size: clamp(1.8rem, 4vw, 2.5rem);">Get in <span class="gradient-text">Touch</span></h2>
+            
+            <div class="contact-grid">
+  <div class="contact-info-box">
+    <h3>Get in Touch</h3>
+    <p>Have questions about our services? Contact us today and our team will get back to you as soon as possible.</p>
+    
+    <div class="contact-details">
+      <div class="contact-detail-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h4>Location</h4>
+          <p>123 Marina Way, Fort Lauderdale, FL 33316</p>
+        </div>
+      </div>
+      
+      <div class="contact-detail-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h4>Phone</h4>
+          <p>(305) 555-1234</p>
+        </div>
+      </div>
+      
+      <div class="contact-detail-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <p>info@yachtico.com</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="contact-hours">
+      <h4>Hours of Operation</h4>
+      <p>Monday - Sunday: 8:00 AM - 8:00 PM</p>
+    </div>
+  </div>
+  
+  <div class="contact-form-box">
+    <form class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" class="form-control">
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" class="form-control">
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" class="form-control" rows="5" required></textarea>
+      </div>
+      
+      <button type="submit" class="btn btn-block">Send Message</button>
+    </form>
+  </div>
+</div></div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-title">Yachtico<span style="color: var(--accent-light-green);"></span></h3>
+                    <p>Experience the ultimate in luxury yacht rentals in Fort Lauderdale. Professional captains, premium vessels, and unforgettable memories on the water.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#fleet">Our Fleet</a></li>
+                        <li><a href="#locations">Destinations</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (305) 555-7890</p>
+                        <p><i class="fas fa-envelope"></i> info@yachtico.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Fort Lauderdale Marina, 555 Seabreeze Blvd, Fort Lauderdale, FL 33316</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <h4 class="footer-title">Newsletter</h4>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email" class="newsletter-input"><button class="btn newsletter-btn"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Yachtico. All rights reserved.</p>
+            </div>
+        </div>
+    </footer><!-- JavaScript --><script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+            
+            // Mobile menu toggle
+            if (mobileMenu && navLinks) {
+                mobileMenu.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('active');
+                    navLinks.classList.toggle('active');
+                });
+            }
+            
+            // Smooth Scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80, // Adjusted for header height
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (mobileMenu && navLinks) {
+                            mobileMenu.classList.remove('active');
+                            navLinks.classList.remove('active');
+                        }
+                    }
+                });
+            });
+            
+            // Loading Animation
+            const loader = document.querySelector('.loader');
+            if (loader) {
+                setTimeout(function() {
+                    loader.classList.add('hidden');
+                }, 1500); // Hide after 1.5 seconds
+            }
+            
+            // Image Slider for Fleet Cards
+            document.querySelectorAll('.fleet-card').forEach(card => {
+                const images = card.querySelectorAll('.fleet-img');
+                const prevBtn = card.querySelector('.prev-arrow');
+                const nextBtn = card.querySelector('.next-arrow');
+                const counter = card.querySelector('.slider-counter');
+                let currentIndex = 0;
+                
+                // Skip if no images or controls
+                if (!images.length || !prevBtn || !nextBtn || !counter) return;
+                
+                // Update counter
+                const updateCounter = () => {
+                    counter.textContent = `${currentIndex + 1}/${images.length}`;
+                };
+                
+                // Show current image
+                const showImage = (index) => {
+                    images.forEach(img => img.classList.remove('active'));
+                    images[index].classList.add('active');
+                    updateCounter();
+                };
+                
+                // Next image
+                nextBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentIndex = (currentIndex + 1) % images.length;
+                    showImage(currentIndex);
+                });
+                
+                // Previous image
+                prevBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    showImage(currentIndex);
+                });
+                
+                // Initialize
+                showImage(currentIndex);
+            });
+            
+            // Testimonial Slider
+            const testimonials = document.querySelectorAll('.testimonial-item');
+            const prevTestimonialBtn = document.querySelector('.prev-testimonial');
+            const nextTestimonialBtn = document.querySelector('.next-testimonial');
+            
+            if (testimonials.length && prevTestimonialBtn && nextTestimonialBtn) {
+                let currentTestimonial = 0;
+                
+                // Show current testimonial
+                const showTestimonial = (index) => {
+                    testimonials.forEach(item => item.classList.remove('active'));
+                    testimonials[index].classList.add('active');
+                };
+                
+                // Next testimonial
+                nextTestimonialBtn.addEventListener('click', () => {
+                    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                    showTestimonial(currentTestimonial);
+                });
+                
+                // Previous testimonial
+                prevTestimonialBtn.addEventListener('click', () => {
+                    currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+                    showTestimonial(currentTestimonial);
+                });
+                
+                // Auto rotate testimonials
+                setInterval(() => {
+                    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                    showTestimonial(currentTestimonial);
+                }, 8000);
+            }
+            
+            // Availability Calendar Function
+            window.showCalendar = function(boatId) {
+                alert(`Calendar will open for ${boatId}. This feature is coming soon!`);
+            };
+            
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            if (faqItems.length) {
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question');
+                    
+                    question.addEventListener('click', () => {
+                        // Close all other items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item && otherItem.classList.contains('active')) {
+                                otherItem.classList.remove('active');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        item.classList.toggle('active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
